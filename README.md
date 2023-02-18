@@ -1,12 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
+  <img src="https://user-images.githubusercontent.com/76660692/219851802-048a1dd1-20c7-4add-8133-0036d1673fc0.png" alt="logo" width="1000"  height="auto" />
 </div>
 
 <!-- TABLE OF CONTENTS -->
