@@ -5,9 +5,9 @@
 class FragTrap: public ClapTrap {
 	protected:
 	std::string basicMsg();
+	FragTrap();
 
 	public:
-	FragTrap();
 	FragTrap(std::string name);
 	virtual ~FragTrap();
 	FragTrap(FragTrap const &frag_trap);

@@ -63,7 +63,7 @@ void DiamondTrap::info() {
 }
 
 void DiamondTrap::whoAmI() {
-	regularCout("[Who Am I?");
+	regularCout("[Who Am I?]");
 	regularCout(this->name);
 	regularCout(ClapTrap::name);
 	regularCout("");

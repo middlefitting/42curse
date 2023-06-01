@@ -57,7 +57,6 @@ std::string ScavTrap::basicMsg() {
 }
 
 void ScavTrap::attack(const std::string& target) {
-	guardGate();
 	std::string msg = basicMsg();
 	msg += ("attacks " + target);
 	if (hit_points == 0) {
@@ -69,6 +68,7 @@ void ScavTrap::attack(const std::string& target) {
 		warningCout(msg);
 	}
 	else {
+		guardGate();
 		msg += (", causing " + std::to_string(attack_damage) + " points of damage!");
 		regularCout(msg);
 		energy_points--;

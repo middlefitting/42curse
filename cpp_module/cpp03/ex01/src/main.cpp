@@ -27,7 +27,7 @@ int main() {
 	d.info();
 
 	std::cout << "\033[36m" << "/** Attact Tests **/" << "\33[0m" <<std::endl;
-	for (int i = 0; i < 15; i ++)
+	for (int i = 0; i < 55; i ++)
 		a.attack("b");
 	a.info();
 
@@ -55,6 +55,5 @@ int main() {
 
 
 	std::cout << "\033[36m" << "/** Destruct Tests **/" << "\33[0m" <<std::endl;
-
 	return (0);
 }

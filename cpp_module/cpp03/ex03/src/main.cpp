@@ -56,6 +56,5 @@ int main() {
 	c.info();
 
 	std::cout << "\033[36m" << "/** Destruct Tests **/" << "\33[0m" <<std::endl;
-
 	return (0);
 }

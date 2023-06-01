@@ -12,9 +12,9 @@ class ClapTrap {
 	std::string basicMsg();
 	void regularCout(std::string msg);
 	void warningCout(std::string msg);
+	ClapTrap();
 
 	public:
-	ClapTrap();
 	ClapTrap(std::string name);
 	~ClapTrap();
 	ClapTrap(ClapTrap const &clap_trap);

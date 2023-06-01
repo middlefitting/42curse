@@ -8,9 +8,9 @@ class ScavTrap: virtual public ClapTrap {
 
 	protected:
 	virtual std::string basicMsg();
+	ScavTrap();
 
 	public:
-	ScavTrap();
 	ScavTrap(std::string name);
 	virtual ~ScavTrap();
 	ScavTrap(ScavTrap const &scav_trap);
