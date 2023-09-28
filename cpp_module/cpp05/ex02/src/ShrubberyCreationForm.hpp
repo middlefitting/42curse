@@ -1,30 +1,29 @@
 #pragma once
 
-#include "AForm.hpp"
 #include <fstream>
 
-class ShrubberyCreationForm : public AForm
-{
-	private:
-		std::string target;
-		ShrubberyCreationForm();
-		void drawTree() const;
-		void openFile(std::ofstream &ofs) const;
-		void drawLeaf(std::ofstream &ofs) const;
-		void drawTrunk(std::ofstream &ofs) const;
+#include "AForm.hpp"
 
-		class FileOpenFailedException:  public std::exception
-		{
-			public:
-				virtual const char *what() const throw();
-		};
+class ShrubberyCreationForm : public AForm {
+ private:
+  std::string target;
+  ShrubberyCreationForm();
+  void drawTree() const;
+  void openFile(std::ofstream &ofs) const;
+  void drawLeaf(std::ofstream &ofs) const;
+  void drawTrunk(std::ofstream &ofs) const;
 
-	public:
-		ShrubberyCreationForm(std::string name, std::string target);
-		~ShrubberyCreationForm();
-		ShrubberyCreationForm(const ShrubberyCreationForm &shrubberyCreationForm);
-		ShrubberyCreationForm& operator=(const ShrubberyCreationForm &shrubberyCreationForm);
+  class FileOpenFailedException : public std::exception {
+   public:
+    virtual const char *what() const throw();
+  };
 
-		void execute(Bureaucrat const & executor) const;
+ public:
+  ShrubberyCreationForm(std::string target);
+  ~ShrubberyCreationForm();
+  ShrubberyCreationForm(const ShrubberyCreationForm &shrubberyCreationForm);
+  ShrubberyCreationForm &operator=(
+      const ShrubberyCreationForm &shrubberyCreationForm);
+
+  void execute(Bureaucrat const &executor) const;
 };
-
