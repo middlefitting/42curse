@@ -1,6 +1,5 @@
 #pragma once
-class Base
-{
-public:
-	virtual ~Base();
+class Base {
+ public:
+  virtual ~Base();
 };
